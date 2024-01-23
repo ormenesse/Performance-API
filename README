@@ -1,0 +1,8 @@
+# Performance Study
+
+In this repository I am studying the best way to create an API to get the most out of a server.
+I am using docker-compose and the following technologies:
+- Nodejs Express;
+- Python Flask Gunicorn Nginx;
+- Python FastAPI;
+- Python FastAPI Gunicorn.

@@ -1,0 +1,54 @@
+version: "3.8"
+services:
+  fastapi:
+    image: fastapi-test
+    ports: 
+      - 8081:80
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 256M
+        reservations:
+          cpus: '1'
+          memory: 256M
+  flask:
+    image: flask-test
+    ports: 
+      - 8082:80
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 256M
+        reservations:
+          cpus: '1'
+          memory: 256M
+  nodejs:
+    image: nodejstest
+    ports: 
+      - 8083:8000
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 256M
+        reservations:
+          cpus: '1'
+          memory: 256M
+  fastapi-simpler:
+    image: fastapisimpler-test
+    ports: 
+      - 8084:80
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 256M
+        reservations:
+          cpus: '1'
+          memory: 256M

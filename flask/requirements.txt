@@ -1,0 +1,9 @@
+Flask
+Flask_Cors
+numpy
+pandas
+pymongo
+requests
+dnspython
+itsdangerous
+gunicorn
